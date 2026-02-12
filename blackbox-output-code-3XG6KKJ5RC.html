@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Desa Harmoni</title>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; margin: 0; color: #556B2F; background: #F5F5DC; }
+        .hero { background: url('village-landscape.jpg') center/cover; height: 100vh; display: flex; align-items: center; justify-content: center; text-align: center; position: relative; }
+        .hero::before { content: ''; position: absolute; top: 0; left: 0; right: 0; bottom: 0; background: linear-gradient(to bottom, rgba(46,139,87,0.5), rgba(135,206,235,0.5)); }
+        .hero-content { position: relative; z-index: 1; color: white; }
+        .hero h1 { font-size: 48px; margin: 0; }
+        .hero p { font-size: 24px; margin: 20px 0; }
+        .cta-btn { background: #2E8B57; color: white; padding: 15px 30px; border: none; border-radius: 5px; font-size: 18px; cursor: pointer; transition: background 0.3s; }
+        .cta-btn:hover { background: #87CEEB; }
+        .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 80px 20px; max-width: 1200px; margin: 0 auto; }
+        .stat-card { background: white; padding: 20px; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); text-align: center; }
+        .stat-card h3 { color: #2E8B57; }
+        @media (max-width: 768px) { .hero h1 { font-size: 32px; } .stats { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul style="list-style: none; display: flex; justify-content: space-around; padding: 20px; background: #2E8B57; color: white;">
+                <li><a href="#beranda">Beranda</a></li>
+                <li><a href="#profil">Profil Desa</a></li>
+                <!-- Add other menu items -->
+            </ul>
+        </nav>
+    </header>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Desa Harmoni</h1>
+            <p>Selamat Datang di Rumah Kami</p>
+            <button class="cta-btn">Pelajari Lebih Lanjut</button>
+        </div>
+    </section>
+    <section class="stats">
+        <div class="stat-card">
+            <h3>Populasi</h3>
+            <p>5,200 Jiwa</p>
+        </div>
+        <div class="stat-card">
+            <h3>Luas Wilayah</h3>
+            <p>1,500 Ha</p>
+        </div>
+        <div class="stat-card">
+            <h3>Peta Desa</h3>
+            <iframe src="https://www.google.com/maps/embed?..." width="100%" height="200"></iframe>
+        </div>
+    </section>
+    <!-- Add more sections like news, gallery, etc. -->
+    <footer style="background: #556B2F; color: white; text-align: center; padding: 20px;">
+        <p>Kontak: +62 123 456 789 | Email: info@desaharmoni.id</p>
+        <div>Social Icons: [FB] [IG] [WA]</div>
+    </footer>
+</body>
+</html>
